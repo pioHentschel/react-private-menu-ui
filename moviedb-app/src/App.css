@@ -1,0 +1,84 @@
+/* Start of the CSS for the main page */
+
+.App 
+{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #042069;
+  color: white;
+  align-items: center;
+  justify-content: space-around;
+}
+
+/* Main display of the Movies on the Page */
+.movieContainer
+{
+  background-color: #06287e;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5px;
+  flex: 1 1 19%;
+  max-width: 19%;
+}
+
+.movieContainer > h2
+{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+  width: 200px;
+}
+
+.movieContainer > img:hover
+{
+  filter: blur(4px);
+  transform: scale(1.2); /*increase image size by 20%*/
+}
+
+.movieContainer > img
+{
+  display: block;
+  width: 250px; /*setting image witdh to 250 pixels*/
+  transition: transform 0.2s ease, filter 0.2s ease; /* smoothing out the animation when moving away with the mouse */
+  will-change: transform, filter;
+}
+
+.description
+{
+  font-size: 70%;
+  background-color: #66666666;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none; /* ensures hover stays on the image */
+  text-align: center;
+}
+
+.movieContainer:has(img:hover)  .description
+{
+  opacity: 1;
+}
+
+@media (max-width: 1330px)
+  {
+    .movieContainer
+    {
+    max-width: 49%
+    }
+  }
+
+  .movieContainer > img
+  {
+    width: 200px;
+  }

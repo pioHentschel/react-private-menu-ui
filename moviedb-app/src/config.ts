@@ -1,0 +1,1 @@
+export const POPULAR_URL: string = "https://api.themoviedb.org/3/movie/popular"

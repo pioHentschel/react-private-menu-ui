@@ -1,0 +1,80 @@
+body
+{
+  background-color: #042069;
+  color: white;
+  align-items: center;
+  height: 100vh;
+}
+
+.MoviePoster
+{
+  height: 100%;
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+	flex-wrap: wrap;
+  float: left;
+  border: #ffffff solid 1px;
+  border-radius: 25px;
+  width: 39%;
+  height: 50%;
+}
+
+    .MoviePoster > img
+    {
+    width: auto;
+    }
+
+
+.Detail_Content_Left
+{
+  margin: 0%;
+}
+
+.Detail_Content_Right
+{
+  margin: 0%;
+  flex-direction: column;
+}
+
+.Description
+{
+	display: flex;
+	flex-wrap: wrap;
+  float: right;
+  color: white;
+  border: #ffffff solid 1px;
+  border-radius: 25px;
+  width: 59%;
+  height: 40vh;
+}
+
+.MiscMovieData
+{
+	display: flex;
+  flex-direction: column;
+	flex-wrap: wrap;
+  float: right;
+  color: white;
+  border: #ffffff solid 1px;
+  border-radius: 25px;
+  width: 59%;
+  height: 40vh;
+}
+
+.MiscMovieData > p
+{
+  background-color:#06287e;
+  /* border: #ffffff solid 1px; */
+  border-radius: 25px;
+  padding: 15px;
+  padding-left: 40px;
+  width: 45%
+}
+
+/* For Potential Mobile usage the Css has to be adjusted */
+@media (max-width: 1330px)
+  {
+
+  }
